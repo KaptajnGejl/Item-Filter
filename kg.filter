@@ -47,7 +47,7 @@ Show
 Show 
 	BaseType "Apprentice Cartographer's Seal"
 	SetBorderColor 206 199 206
-	SetTextColor 169 159 124 
+	SetTextColor 169 159 124  
 	SetFontSize 40
 
 Show 
