@@ -1,0 +1,658 @@
+#######################################################
+#Currency
+#######################################################
+
+Show 
+	BaseType "Mirror of Kalandra"  "Gemcutter's Prism"  "Regal Orb" "Exalted Orb" "Chaos Orb" "Blessed Orb" "Divine Orb"  "Eternal Orb" "Orb of Regret" "Unshaping Orb"
+	SetBorderColor  169 159 124
+	SetBackgroundColor 117 107 77 255
+	SetFontSize 40
+	SetTextColor 0 0 0 
+	PlayAlertSound 7 100
+
+Show
+	BaseType "Cartographer's Chisel" "Orb of Alchemy" "Orb of Scouring" "Vaal Orb" "Glassblower's Bauble" "Orb of Fusing"
+	SetBorderColor 169 159 124
+	SetTextColor 0 0 0
+	SetBackgroundColor 82 75 54 255	
+
+
+Show 	
+	BaseType "Stacked Deck" "Silver Coin" "Chromatic Orb"  "Orb of Transmutation" "Orb of Chance" "Orb of Augmentation" "Orb of Alteration" "Jeweller's Orb"
+	SetBorderColor 169 159 124 
+	SetBackgroundColor 49 45 32 255
+	
+######################
+#Atlas Currency
+######################
+
+Show 
+	BaseType "Apprentice Cartographer's Sextant" 
+	SetBorderColor 206 199 206
+	SetTextColor 169 159 124 
+	SetFontSize 40
+
+Show 
+	BaseType "Journeyman Cartographer's Sextant" 
+	SetBorderColor 236 241 14
+	SetTextColor 169 159 124 
+	SetFontSize 40
+
+Show 
+	BaseType "Master Cartographer's Sextant" 
+	SetBorderColor 248 7 7
+	SetTextColor 169 159 124 
+	SetFontSize 40
+
+Show 
+	BaseType "Apprentice Cartographer's Seal"
+	SetBorderColor 206 199 206
+	SetTextColor 169 159 124 
+	SetFontSize 40
+
+Show 
+	BaseType "Journeyman Cartographer's Seal"
+	SetBorderColor 236 241 14
+	SetTextColor 169 159 124 
+	SetFontSize 40
+	
+Show 
+	BaseType "Master Cartographer's Seal"
+	SetBorderColor 248 7 7 
+	SetTextColor 169 159 124 
+	SetFontSize 40
+	
+Show 
+	Class Currency
+	SetBorderColor 169 159 124 
+
+
+#####################################################
+#Jewels
+#####################################################
+
+Show 
+	Class Jewel
+	Rarity Normal
+	SetBorderColor 206 199 206
+
+Show 
+	Class Jewel
+	Rarity Magic 
+	SetBorderColor 128 128 255
+
+Show
+	Class Jewel
+	Rarity Rare
+	SetBorderColor 254 254 118
+
+
+######################################################
+#Gems
+######################################################
+
+Show
+	Class Gem
+	Quality > 0
+	SetBorderColor 11 141 131
+
+Show 
+	Class Gem
+
+#######################################################
+#Divination Cards
+#######################################################
+
+Show 
+	Class "Divination Card"
+	SetFontSize 40
+	SetBorderColor  0 181 247
+
+#######################################################
+#Flasks
+#######################################################
+
+Show 
+	Class Flask
+	Rarity Magic
+	Quality > 0
+	SetBorderColor 128 128 255
+
+Show
+	Class Flask
+	Rarity Normal
+	Quality > 0
+	SetBorderColor 206 199 206
+
+Show
+	Class Flask
+	Rarity Magic 
+	BaseType "Divine Life Flask" "Eternal Life Flask" "Quicksilver Flask" "Ruby Flask" "Sapphire Flask" "Topaz Flask" "Amethyst Flask" "Granite Flask" "Jade Flask"
+	SetBorderColor 128 128 255
+
+Show 
+	Class Flask
+	Rarity Normal
+	BaseType "Divine Life Flask" "Eternal Life Flask" "Quicksilver Flask" "Ruby Flask" "Sapphire Flask" "Topaz Flask" "Amethyst Flask" "Granite Flask" "Jade Flask" "Bismuth Flask" "Stibnite Flask" "Silver Flask" "Aquamarine Flask" "Sulphur Flask" "Basalt Flask"
+	SetBorderColor 206 199 206
+
+Show  
+	Class Flask
+	ItemLevel <= 55
+
+#######################################################
+#RGB Sockets
+#######################################################
+
+Show 
+	LinkedSockets < 5
+	SocketGroup RGB
+	Height <= 2
+	Width <= 2
+	Rarity Normal
+	SetBorderColor 206 199 206
+
+Show 
+	LinkedSockets < 5
+	SocketGroup RGB
+	Height <= 2
+	Width <= 2
+	Rarity Magic
+	SetBorderColor  128 128 255
+
+Show
+	LinkedSockets < 5 
+	SocketGroup RGB
+	Rarity Rare
+	SetBorderColor  254 254 118
+
+#######################################################
+#Links
+#######################################################
+
+Show 
+	LinkedSockets = 3
+	ItemLevel <= 30
+
+Show
+	LinkedSockets  4 
+	ItemLevel <= 55
+	Rarity Normal
+	SetBorderColor 206 199 206
+
+Show 
+	LinkedSockets  4 
+	ItemLevel <= 55
+	Rarity Magic
+	SetBorderColor 128 128 255
+
+Show 
+	LinkedSockets  4 
+	ItemLevel <= 67
+	Rarity Rare
+	SetBorderColor 254 254 118
+	
+Show 
+	LinkedSockets > 5
+	SocketGroup WWWWWW
+	SetFontSize 40
+	SetBorderColor 175 95 28
+	
+Show 
+	LinkedSockets = 5 
+	SetBorderColor 71 230 53
+	
+Show
+	LinkedSockets = 6
+	SetFontSize 40
+	SetBorderColor 24 13 255
+
+#######################################################
+#6 Sockets
+#######################################################
+
+Show 
+	Sockets = 6 
+	Rarity Normal
+	SetBorderColor 206 199 206
+    SetFontSize 40
+	PlayAlertSound 7 100
+
+Show 
+	Sockets = 6 
+	Rarity Magic
+	SetBorderColor 128 128 255
+    SetFontSize 40
+	PlayAlertSound 7 100
+
+Show 
+	Sockets = 6 
+	Rarity Rare
+	SetBorderColor 254 254 118
+    SetFontSize 40
+	PlayAlertSound 7 100
+
+
+########################################################
+#Crafting
+########################################################
+Show
+	Rarity Normal
+    BaseType "Sacrificial Garb" "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" 
+	SetFontSize 40
+	SetBorderColor 24 13 255
+	
+Show 
+	Rarity Normal
+	ItemLevel >= 83
+	BaseType "Leather Belt" "Chain Belt" "Rustic Sash" "Onyx Amulet" "Coral Ring" "Two-Stone Ring" "Moonstone Ring" "Prismatic Ring" "Carnal Armour" "Saintly Chainmail" "Assassin's Garb" "Glorious Plate" "Vaal Regalia" "Triumphant Lamellar" "Slink Boots" "Murder Boots" "Titan Greaves" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Slink Gloves" "Titan Gauntlets" "Sorcerer Gloves" "Dragonscale Gauntlets" "Murder Mitts" "Crusader Gloves" "Lion Pelt" "Hubris Circlet" "Eternal Burgonet" "Praetor Crown" "Deicide Mask" "Nightmare Bascinet" "Pinnacle Tower Shield" "Supreme Spiked Shield" "Elegant Round Shield" "Imperial Buckler" "Titanium Spirit Shield" "Archon Kite Shield"
+	SetBorderColor 24 13 255
+
+#Show
+   # BaseType "Gavel" 
+   # Rarity Normal
+   # SetBorderColor 206 199 206
+
+Show 
+	BaseType "Sorcerer Boots"
+	Rarity Normal
+
+########################################################
+#Maps
+########################################################
+
+############
+#Tier 1
+############
+Show 
+	Class Map
+	BaseType "Arcade" "Crystal Ore" "Desert" "Jungle Valley"
+	SetBackgroundColor 48 41 48 
+	SetFontSize 40
+	PlayAlertSound 8 100
+	
+############
+#Tier 2
+############
+Show 
+	Class Map
+	BaseType "Beach" "Factory" "Ghetto" "Oasis" 
+	SetBackgroundColor 48 41 48 
+	SetFontSize 40
+	PlayAlertSound 8 100
+
+############
+#Tier 3
+############
+Show 
+	Class Map
+	BaseType "Arid Lake" "Cavern" "Channel" "Grotto" "Marshes" "Sewer" "Vaal Pyramid" 
+	SetBackgroundColor 48 41 48 
+	SetFontSize 40
+	PlayAlertSound 8 100	
+	
+############
+#Tier 4
+############
+Show 
+	Class Map
+	BaseType "Academy" "Acid Lakes" "Dungeon" "Graveyard" "Phantasmagoria" "Villa" "Waste Pool" 
+ 	SetBackgroundColor 48 41 48 
+	SetFontSize 40
+	PlayAlertSound 8 100	
+	
+############
+#Tier 5
+############
+Show 
+	Class Map
+	BaseType "Burial Chambers" "Peninsula" "Dunes" "Mesa" "Pit" "Primordial Pool" "Spider Lair" "Tower" 
+ 	SetBackgroundColor 48 41 48 
+	SetFontSize 40
+	PlayAlertSound 8 100	
+
+############
+#Tier 6
+############
+Show 
+	Class Map
+	BaseType "Shaped Arcade" "Shaped Crystal Ore" "Shaped Desert" "Shaped Jungle Valley" "Canyon" "Quarry" "Racecourse" "Ramparts" "Spider Forest" "Strand" "Thicket" "Vaal City" "Wharf" 
+ 	SetBorderColor 236 241 14
+	SetBackgroundColor 49 48 2
+	SetFontSize 40
+	PlayAlertSound 8 100
+	
+############
+#Tier 7
+############
+Show 
+	Class Map
+	BaseType "Shaped Beach" "Shaped Factory" "Shaped Ghetto" "Shaped Oasis" "Arachnid Tomb" "Castle Ruins" "Catacombs" "Cells" "Armory" "Ashen Wood" "Mud Geyser" 
+ 	SetBorderColor 236 241 14
+	SetBackgroundColor 49 48 2
+	SetFontSize 40
+	PlayAlertSound 8 100
+
+############
+#Tier 8
+############
+Show 
+	Class Map
+	BaseType "Shaped Arid Lake" "Shaped Cavern" "Shaped Channel" "Shaped Grotto" "Shaped Marshes" "Shaped Sewer" "Shaped Vaal Pyramid" "Arachnid Nest" "Arena" "Bog" "Cemetery" "Barrows" "Atoll" "Pier" "Shore" "Tropical Island" 
+ 	SetBorderColor 236 241 14
+	SetBackgroundColor 49 48 2
+	SetFontSize 40
+	PlayAlertSound 8 100	
+	
+############
+#Tier 9
+############
+Show 
+	Class Map
+	BaseType "Shaped Academy" "Shaped Acid Lakes" "Shaped Dungeon" "Shaped Graveyard" "Shaped Phantasmagoria" "Shaped Villa" "Shaped Waste Pool" "Coves" "Crypt" "Museum" "Orchard" "Overgrown Shrine" "Promenade" "Reef" "Temple"
+ 	SetBorderColor 236 241 14
+	SetBackgroundColor 49 48 2
+	SetFontSize 40
+	PlayAlertSound 8 100	
+
+############
+#Tier 10
+############
+Show 
+	Class Map
+	BaseType "Shaped Burial Chambers" "Shaped Peninsula" "Shaped Dunes" "Shaped Mesa" "Shaped Pit" "Shaped Primordial Pool" "Shaped Spider Lair" "Shaped Tower" "Colonnade" "Arsenal" "Courtyard" "Malformation" "Quay" "Terrace" "Underground River" 
+  	SetBorderColor 236 241 14
+	SetBackgroundColor 49 48 2
+	SetFontSize 40
+	PlayAlertSound 8 100
+
+############
+#Tier 11
+############
+Show 
+	Class Map
+	BaseType "Shaped Canyon" "Shaped Quarry" "Shaped Racecourse" "Shaped Ramparts" "Shaped Spider Forest" "Shaped Strand" "Shaped Thicket" "Shaped Vaal City" "Shaped Wharf" "Bazaar" "Chateau" "Excavation" "Precinct" "Torture Chamber" "Underground Sea" "Wasteland"  
+  	SetBorderColor 248 7 7
+	SetBackgroundColor 40 1 1
+	SetFontSize 40
+	PlayAlertSound 8 100
+	
+############
+#Tier 12
+############
+Show 
+	Class Map
+	BaseType "Shaped Arachnid Tomb" "Shaped Castle Ruins" "Shaped Catacombs" "Shaped Cells" "Shaped Armory" "Shaped Ashen Wood" "Shaped Mud Geyser" "Crematorium" "Estuary" "Necropolis" "Plateau" "Ivory Temple" "Residence" "Shipyard" "Vault"
+  	SetBorderColor 248 7 7
+	SetBackgroundColor 40 1 1
+	SetFontSize 40
+	PlayAlertSound 8 100
+
+############
+#Tier 13
+############
+Show 
+	Class Map
+	BaseType "Shaped Arachnid Nest" "Shaped Arena" "Shaped Bog" "Shaped Cemetery" "Shaped Barrows" "Shaped Atoll" "Shaped Pier" "Shaped Shore" "Shaped Tropical Island" "Lair" "Beacon" "Gorge" "High Gardens" "Plaza" "Scriptorium" "Sulphur Wastes" "Waterways" 
+  	SetBorderColor 248 7 7
+	SetBackgroundColor 40 1 1
+	SetFontSize 40
+	PlayAlertSound 8 100
+
+############
+#Tier 14
+############
+Show 
+	Class Map
+	BaseType "Shaped Coves" "Shaped Crypt" "Shaped Museum" "Shaped Orchard" "Shaped Overgrown Shrine" "Shaped Promenade" "Shaped Reef" "Shaped Temple" "Maze" "Mineral Pools" "Palace" "Shrine" "Springs" "Volcano"
+  	SetBorderColor 248 7 7
+	SetBackgroundColor 40 1 1
+	SetFontSize 40
+	PlayAlertSound 8 100
+	
+############
+#Tier 15
+############
+Show 
+	Class Map
+	BaseType "Shaped Colonnade" "Shaped Arsenal" "Shaped Courtyard" "Shaped Malformation" "Shaped Quay" "Shaped Terrace" "Shaped Underground River" "Abyss" "Colosseum" "Core" "Dar Forest" "Overgrown Ruin" 
+  	SetBorderColor 248 7 7
+	SetBackgroundColor 40 1 1
+	SetFontSize 40
+	PlayAlertSound 8 100
+	
+############
+#Tier 16
+############
+Show 
+	Class Map
+	BaseType "Pit of the Chimera" "Lair of the Hydra" "Maze of the Minotaur" "Forge of the Phoenix" "Vaal Temple" 
+  	SetBorderColor 117 37 224
+	SetBackgroundColor 19 5 37
+	SetFontSize 40
+	PlayAlertSound 8 100
+	
+Show 
+	Class Map
+	SetFontSize 40
+	PlayAlertSound 8 100
+
+Show
+	Class "Map Fragments"
+    SetFontSize 40
+	PlayAlertSound 8 100
+	
+#######################################################
+#Uniques
+#######################################################
+
+Show
+	Rarity Unique
+	SetFontSize 40
+	SetBorderColor 175 95 28
+	
+#######################################################	
+#League Specific Stuff
+#######################################################
+
+Show 
+	BaseType "Talisman"
+
+Show 
+	BaseType "Offering to the Goddess"
+	PlayAlertSound 4 300
+	SetTextColor 117 37 224 
+    SetBorderColor 117 37 224
+	
+Show
+	Class "Labyrinth"
+	SetTextColor 117 37 224 
+    SetBorderColor 117 37 224
+	
+Show
+    Class Currency
+    BaseType "Prophecy"
+    SetBackgroundColor 159 15 213
+    SetTextColor 0 0 0
+    SetBorderColor 0 0 0
+	PlayAlertSound 1 300
+    SetFontSize 40
+
+Show
+	Class Currency
+	BaseType "Perandus"
+	SetTextColor 255 178 135 255
+	SetBorderColor 255 178 135 135
+	SetFontSize 38
+
+###################
+#Essence
+###################
+
+Show
+	Class Currency 
+	BaseType "Whispering Essence" "Muttering Essence"
+	SetTextColor 138 219 30
+	
+Show 
+	Class Currency 
+	BaseType "Weeping Essence" "Wailing Essence"
+	SetTextColor 138 219 30
+	SetBorderColor 138 219 30
+
+Show 
+	Class Currency
+	BaseType "Screaming Essence" "Shrieking Essence" "Deafening Essence"
+	SetTextColor 138 219 30
+	SetBorderColor 138 219 30
+	SetBackgroundColor 41 66 9
+	SetFontSize 40
+	
+Show
+	Class Currency 
+	BaseType "Essence of Hysteria" "Essence of Insanity" "Essence of Horror" "Essence of Delirium" 
+	SetTextColor 248 7 7
+	SetBorderColor 138 219 30
+	SetBackgroundColor 41 66 9
+	SetFontSize 40
+	
+Show 
+	Class Currency
+	Basetype "Remnant of Corruption"
+	SetTextColor 248 7 7
+	SetBorderColor 248 7 7
+	SetBackgroundColor 41 66 9
+	SetFontSize 40
+
+#######################################################
+#Rarity Filtering
+#######################################################
+
+##############################
+#Mark jewlery for chaos recipe
+##############################
+
+Show 
+	Class Ring Amulet Belt
+	Rarity Rare
+	ItemLevel >= 60
+	ItemLevel < 75
+	SetBorderColor 71 230 53
+	
+##########################
+#Mark best bases - Weapons
+##########################
+	
+Show 
+	Rarity Rare
+	BaseType "Runic Hatchet" "Infernal Axe" "Pernarch" "Behemoth Mace" "Maraketh Bow" "Harbinger Bow" "Vaal Claw" "Imperial Claw" "Sai" "Ambusher" "Tiger Hook" "Legion Sword" "Carnal Sceptre" "Sambar Sceptre" "Imperial Staff" "Eclipse Staff" "Vaal Rapier" "Dragoon Sword" "Vaal Axe" "Fleshripper" "Meatgrinder" "Coronal Maul" "Vaal Greatsword" "Exquisite Blade" "Imbued Wand" "Profane Wand"
+	SetFontSize 40
+	ItemLevel >= 60 
+	ItemLevel < 75
+	SetBackgroundColor 11 53 6
+
+########################
+#Mark best bases - Armor
+########################
+
+Show
+	Rarity Rare
+	BaseType "Full Dragonscale" "Triumphant Lamellar" "Carnal Armour" "Glorious Plate" "Astral Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Occultist's Vestment" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Assassin's Boots" "Crusader Boots" "Dragonscale Boots" "Titan Gauntlets" "Dragonscale Gauntlets" "Slink Gloves" "Murder Mitts" "Sorcerer Gloves" "Crusader Gloves" "Royal Burgonet" "Pig-Faced Bascinet" "Prophet Crown" "Lion Pelt" "Nightmare Bascinet" "Vaal Mask" "Hubris Circlet" "Praetor Crown" "Deicide Mask" "Colossal Tower Shield" "Cardinal Round Shield" "Archon Kite Shield" "Lacquered Buckler" "Supreme Spiked Shield" "Titanium Spirit Shield"
+	SetFontSize 40
+	ItemLevel >= 60
+	ItemLevel < 75 
+	SetBackgroundColor 11 53 6
+
+##############################
+#Mark Jewelry for regal recipe
+##############################
+	
+Show 
+	Rarity Rare
+	Class Ring Amulet Belt
+	ItemLevel >= 75
+	SetBorderColor 113 9 198
+
+##################################
+#Mark best bases ilvl 75 - Weapons
+##################################
+
+Show 
+	Rarity Rare
+	BaseType "Runic Hatchet" "Infernal Axe" "Pernarch" "Behemoth Mace" "Maraketh Bow" "Harbinger Bow" "Vaal Claw" "Imperial Claw" "Sai" "Ambusher" "Tiger Hook" "Legion Sword" "Carnal Sceptre" "Sambar Sceptre" "Imperial Staff" "Eclipse Staff" "Vaal Rapier" "Dragoon Sword" "Vaal Axe" "Fleshripper" "Meatgrinder" "Coronal Maul" "Vaal Greatsword" "Exquisite Blade" "Imbued Wand" "Profane Wand"
+	SetFontSize 40
+	ItemLevel >= 75 
+	SetBackgroundColor 50 4 87
+
+################################	
+#Mark best bases ilvl 75 - Armor
+################################
+
+Show 
+	Rarity Rare
+	BaseType "Full Dragonscale" "Triumphant Lamellar" "Carnal Armour" "Glorious Plate" "Astral Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Occultist's Vestment" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Assassin's Boots" "Crusader Boots" "Dragonscale Boots" "Titan Gauntlets" "Dragonscale Gauntlets" "Slink Gloves" "Murder Mitts" "Sorcerer Gloves" "Crusader Gloves" "Royal Burgonet" "Pig-Faced Bascinet" "Prophet Crown" "Lion Pelt" "Nightmare Bascinet" "Vaal Mask" "Hubris Circlet" "Praetor Crown" "Deicide Mask" "Colossal Tower Shield" "Cardinal Round Shield" "Archon Kite Shield" "Lacquered Buckler" "Supreme Spiked Shield" "Titanium Spirit Shield"
+	SetFontSize 40
+	ItemLevel >= 75 
+	SetBackgroundColor 50 4 87
+	
+#Show 
+	#Rarity Normal
+	#BaseType "Jade Amulet" "Lapis Amulet" "Amber Amulet" "Onyx Amulet" "Coral Ring" "Two-Stone Ring" "Moonstone Ring" "Prismatic Ring" "Turquoise Amulet" "Agate Amulet" "Leather Belt" "Rustic Sash"
+	#ItemLevel >= 60
+	#ItemLevel < 75
+	#SetBorderColor 71 230 53
+	
+#Show 
+	#Rarity Normal
+	#ItemLevel >= 75
+	#ItemLevel < 83
+	#BaseType "Jade Amulet" "Lapis Amulet" "Amber Amulet" "Onyx Amulet" "Coral Ring" "Two-Stone Ring" "Moonstone Ring" "Prismatic Ring" "Turquoise Amulet" "Agate Amulet" "Leather Belt" "Rustic Sash"
+	#SetBorderColor 113 9 198
+
+	
+######################
+#Low Level Filtering
+######################
+	
+Show
+	Rarity Normal
+	ItemLevel <= 15
+
+Show 
+	Rarity Magic
+	ItemLevel <= 30 	
+
+Show 
+	Rarity Magic
+	Class Ring Amulet Belt
+	ItemLevel <= 55 
+	
+######################
+#Show all other rares
+######################
+
+Show 
+	Rarity Rare
+	
+########################################################	
+#Animate Weapon
+########################################################
+
+#Show
+	# Class "Claws" "Daggers" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Sceptres"
+	# Rarity Normal
+	# SetBorderColor 177 31 45
+
+#######################################################
+#Everything Else
+#######################################################
+
+Show 
+		Class "Fishing Rod"
+		SetFontSize 40
+		SetBorderColor 24 13 255
+		
+Show
+    	Class "Quest Items" "Microtransactions"
+
+Hide
